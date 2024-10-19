@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="text-center my-6">
+        <h1 class="text-4xl font-bold">Travel Planner</h1>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="container mx-auto mb-6">
+        <div class="flex justify-center">
+            <input id="search-input" type="text" placeholder="Search for a destination..." class="border p-2 rounded w-full max-w-lg">
+            <button id="search-btn" class="ml-2 p-2 bg-blue-500 text-white rounded">Search</button>
+        </div>
+    </div>
+
+    <!-- Destination Cards -->
+    <div class="container mx-auto">
+        <div id="destinations" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+
+    <!-- Itinerary Planner -->
+    <div class="container mx-auto mt-6">
+        <div class="border rounded p-4">
+            <h2 class="text-xl font-bold mb-4">My Itinerary</h2>
+            <ul id="itinerary-list" class="mb-4"></ul>
+            <input id="itinerary-input" type="text" placeholder="Add a destination" class="border p-2 rounded w-full">
+            <button id="add-itinerary-btn" class="mt-2 p-2 bg-green-500 text-white rounded w-full">Add</button>
+        </div>
+    </div>
+
+</body>
+</html>
